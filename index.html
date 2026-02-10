@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Daily Study & Meal Planner</h1>
+
+<div class="form-container">
+    <label>Name:</label>
+    <input type="text" id="name">
+
+    <label>Country:</label>
+    <select id="country">
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+    </select>
+
+    <label>Study Hours per Day:</label>
+    <input type="number" id="hours">
+
+    <label>Subject:</label>
+    <input type="text" id="subject">
+
+    <label>Preferred Study Time:</label>
+    <select id="preference">
+        <option value="morning">Morning</option>
+        <option value="evening">Evening</option>
+    </select>
+
+    <button onclick="generatePlan()">Generate Plan</button>
+</div>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

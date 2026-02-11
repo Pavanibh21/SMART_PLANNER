@@ -7,32 +7,22 @@
 </head>
 <body>
 
-<h1>Daily Study & Meal Planner</h1>
+<h1>📘 Smart Study Planner</h1>
 
-<div class="form-container">
-    <label>Name:</label>
-    <input type="text" id="name">
+<div class="form-box">
+    <label>Number of Subjects</label>
+    <input type="number" id="subjects" min="1">
 
-    <label>Country:</label>
-    <select id="country">
-        <option value="india">India</option>
-        <option value="usa">USA</option>
-        <option value="uk">UK</option>
-    </select>
+    <label>Study Time per Subject (minutes)</label>
+    <input type="number" id="studyTime" min="1">
 
-    <label>Study Hours per Day:</label>
-    <input type="number" id="hours">
+    <label>Break Time (minutes)</label>
+    <input type="number" id="breakTime" min="1">
 
-    <label>Subject:</label>
-    <input type="text" id="subject">
+    <label>Start Time</label>
+    <input type="time" id="startTime">
 
-    <label>Preferred Study Time:</label>
-    <select id="preference">
-        <option value="morning">Morning</option>
-        <option value="evening">Evening</option>
-    </select>
-
-    <button onclick="generatePlan()">Generate Plan</button>
+    <button onclick="generatePlan()">Generate Planner</button>
 </div>
 
 <div id="result"></div>
